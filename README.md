@@ -12,6 +12,8 @@ This project returns a synthetic homepage for a project or site you haven't buil
 * Pop in your own details so that people know how to find out about the project or get in touch
 * When your project is ready to publish, update your Fastly service to point at it!
 
+![Homepage preview](https://cdn.glitch.global/c60940d7-2acc-4570-9bdc-97168aa9d35b/homepage.png?v=1702921290416)
+
 ## Understanding the code
 
 _This project is a remix of the default Fastly Compute starter kit._
