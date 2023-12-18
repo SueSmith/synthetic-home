@@ -8,7 +8,7 @@ import { includeBytes } from "fastly:experimental";
 
 // Load a static file as a Uint8Array at compile time.
 // File path is relative to root of project, not to this file
-const welcomePage = includeBytes("./src/welcome-to-compute.html");
+const welcomePage = includeBytes("./src/homepage.html");
 
 // The entry point for your application.
 //
