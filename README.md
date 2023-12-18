@@ -10,7 +10,10 @@ This project returns a synthetic homepage for a project or site you haven't buil
 
 * Spin up a temp homepage for a project you've bought a domain for
 * Pop in your own details so that people know how to find out about the project or get in touch
-* When your project is ready to publish, update your Fastly service to point at it!
+* Set your domain to [point at your Fastly service](https://dev.to/fastly/point-a-domain-at-your-site-with-fastly-1khm)
+* When your project is ready to publish at the domain, update your Fastly service origin or edge compute logic to show it!
+
+[**Example deploy**](https://homepage.edgecompute.app/)
 
 ![Homepage preview](https://cdn.glitch.global/c60940d7-2acc-4570-9bdc-97168aa9d35b/homepage.png?v=1702921290416)
 
