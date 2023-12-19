@@ -2,14 +2,21 @@
 
 [![Deploy to Fastly](https://deploy.edgecompute.app/button)](https://deploy.edgecompute.app/deploy)
 
-This project returns a synthetic homepage for a project or site you haven't built yet, but perhaps have bought a domain for.
+✨ **Spin up a temp homepage for a project you're working on.** ✨
 
-**For more details about other starter kits for Compute, see the [Fastly developer hub](https://developer.fastly.com/solutions/starters)**
+This project returns a synthetic homepage for an app or site you haven't built yet, but have perhaps bought a domain for. Return some info about your project if you aren't ready to figure out hosting yet.
 
-## Features
+## How to use this project
 
-* Spin up a temp homepage for a project you've bought a domain for
-* Pop in your own details so that people know how to find out about the project or get in touch
+* Sign into GitHub
+* Sign into / up for [Fastly](https://www.fastly.com/signup/) and [grab an API key](https://docs.fastly.com/en/guides/using-api-tokens)
+* Click the __Deploy to Fastly__ button in this repo
+* The [Cloud Deploy](https://developer.fastly.com/learning/tools/cloud-deploy/) flow will walk you through cloning the repo and deploying it to a Fastly Compute service
+* Edit the `/src/homepage.html` content to include your own details, let people know about your project or how to get in touch with you
+* When you push to the main branch, the GitHub actions in the repo will use Fastly CLI to deploy your changes to the [Compute service](https://developer.fastly.com/learning/compute/)
+
+### Optional:
+
 * Set your domain to [point at your Fastly service](https://dev.to/fastly/point-a-domain-at-your-site-with-fastly-1khm)
 * When your project is ready to publish at the domain, update your Fastly service origin or edge compute logic to show it!
 
@@ -26,3 +33,5 @@ This starter is intentionally lightweight, and requires no dependencies aside fr
 The starter doesn't require the use of any backends. Once deployed, you will have a Fastly service running on Compute that can generate synthetic responses at the edge.
 
 The template uses webpack to bundle `index.js` and its imports into a single JS file, `bin/index.js`, which is then wrapped into a `.wasm` file, `bin/index.wasm` using the `js-compute-runtime` CLI tool bundled with the `@fastly/js-compute` npm package, and bundled into a `.tar.gz` file ready for deployment to Compute.
+
+**For more details about other starter kits for Compute, see the [Fastly developer hub](https://developer.fastly.com/solutions/starters)**
